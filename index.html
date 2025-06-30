@@ -88,7 +88,7 @@
     <div id="popup" class="popup">
       <div class="popup__container">
         <div class="popup__content">
-          <i onclick="" class="fa fa-remove close"></i>
+          <i onclick="closePopup()" class="fa fa-remove close"></i>
           <h2 class="popup__main__heading">SUBSCRIBE</h2>
           <p class="popup__para__text">
             Join our mailing list to receive updates on available dates and
@@ -100,7 +100,7 @@
           <button
             type="button"
             class="fake__subscribe__button"
-            onclick="closePopup()"
+            onclick="closePopupAlert()"
           >
             Subscribe
           </button>
@@ -119,15 +119,103 @@
 
       <!-- Info Section -->
 
-      <div class="info__container"></div>
+      <div class="info__container">
+        <hr />
+        <h4><strong>Extra Info</strong></h4>
+        <p>
+          Our apartment is really clean and we like to keep it that way. Enjoy
+          the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          We accept: <i class="fa fa-credit-card larger"></i>
+          <i class="fa fa-cc-mastercard larger"></i>
+          <i class="fa fa-cc-amex larger"></i>
+          <i class="fa fa-cc-paypal larger"></i>
+        </p>
+        <hr />
+        <h4><strong>Rules</strong></h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Subscribe to receive updates on available dates and special offers.
+        </p>
+        <p>
+          <button
+            class="search__button"
+            onclick="openPopup()"
+            style="width: 33.33333% !important; text-align: center; float: left;"
+          >
+            Subscribe
+          </button>
+        </p>
+      </div>
+
+      <hr />
 
       <!-- Contact Section -->
 
-      <div class="contact__section"></div>
+      <div class="contact__section">
+        <h2>Contact</h2>
+        <i class="fa fa-map-marker" style="width: 30px"></i> Chicago, US<br />
+        <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 151515<br />
+        <i class="fa fa-envelope" style="width: 30px"> </i> Email:
+        mail@mail.com<br />
+        <p>Questions? Go ahead, ask them:</p>
+        <form>
+          <p>
+            <input
+              class="input__border"
+              type="text"
+              placeholder="Name"
+              required=""
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="input__border"
+              type="text"
+              placeholder="Email"
+              required=""
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="input__border"
+              type="text"
+              placeholder="Message"
+              required=""
+              name="Message"
+            />
+          </p>
+          <button
+            type="submit"
+            class="search__button"
+            style="width: 33.33333% !important; text-align: center;"
+          >
+            Send a Message
+          </button>
+        </form>
+      </div>
 
       <!-- Footer Section -->
 
-      <footer class="footer__section"></footer>
+      <footer class="footer__section" style="margin-top: 32px">
+        Powered by
+        <a
+          href="#"
+          class="green__link"
+          >w3.css</a
+        >
+      </footer>
     </div>
 
     <script src="main.js"></script>
