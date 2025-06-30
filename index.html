@@ -5,29 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>W3.CSS Template</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="https://www.w3schools.com/favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Side Nav -->
+
+    <nav class="nav__container">
+      <div class="nav__top__content">
+        <h3>Rental</h3>
+        <h3>from $99</h3>
+        <h6>per night</h6>
+        <hr />
+        <form>
+          <p>
+            <label><i class="fa fa-calendar-check-o"></i> Check In</label>
+          </p>
+          <input
+            class="input__border"
+            type="text"
+            placeholder="DD MM YYYY"
+            name="CheckIn"
+            required=""
+          />
+          <p>
+            <label><i class="fa fa-calendar-o"></i> Check Out</label>
+          </p>
+          <input
+            class="input__border"
+            type="text"
+            placeholder="DD MM YYYY"
+            name="CheckOut"
+            required=""
+          />
+          <p>
+            <label><i class="fa fa-male"></i> Adults</label>
+          </p>
+          <input
+            class="input__border"
+            type="number"
+            value="1"
+            name="Adults"
+            min="1"
+            max="6"
+          />
+          <p>
+            <label><i class="fa fa-child"></i> Kids</label>
+          </p>
+          <input
+            class="input__border"
+            type="number"
+            value="0"
+            name="Kids"
+            min="0"
+            max="6"
+          />
+          <p>
+            <button class="search__button" type="submit">
+              <i class="fa fa-search"></i> Search availability
+            </button>
+          </p>
+        </form>
+      </div>
+      <div class="nav__bottom__content">
+        <a href="#" class=""><i class="fa fa-building"></i> Apartment</a>
+        <a href="#" class="" onclick="openPopup()">
+          <i class="fa fa-rss"></i> Subscribe
+        </a>
+        <a href="#" class=""><i class="fa fa-envelope"></i> Contact</a>
+      </div>
+    </nav>
 
     <!-- PopUp -->
 
     <div id="popup" class="popup">
       <div class="popup__container">
         <div class="popup__content">
-          <i onclick="closePopup()" class="fa fa-remove close"></i>
+          <i onclick="" class="fa fa-remove close"></i>
           <h2 class="popup__main__heading">SUBSCRIBE</h2>
           <p class="popup__para__text">
-            Join our mailing list to receive updates on available dates and special offers.
+            Join our mailing list to receive updates on available dates and
+            special offers.
           </p>
           <p class="popup__input__p">
             <input type="text" placeholder="Enter e-mail" />
           </p>
           <button
             type="button"
-            class="fake__subscribe__button red"
+            class="fake__subscribe__button"
             onclick="closePopup()"
           >
             Subscribe
@@ -36,7 +108,27 @@
       </div>
     </div>
 
-    <main></main>
+    <div class="main">
+      <!-- Apartment Section -->
+
+      <div class="apartment__section"></div>
+
+      <!-- Gallery Section -->
+
+      <div class="gallery__section"></div>
+
+      <!-- Info Section -->
+
+      <div class="info__container"></div>
+
+      <!-- Contact Section -->
+
+      <div class="contact__section"></div>
+
+      <!-- Footer Section -->
+
+      <footer class="footer__section"></footer>
+    </div>
 
     <script src="main.js"></script>
   </body>
