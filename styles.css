@@ -207,11 +207,66 @@ hr {
 
 /* Apartment Section */
 
+.main .apartment__heading {
+  color: var(--green);
+  padding: 0.01em 16px;
+}
+
+.apartment__section {
+  width: 100%;
+  position: relative;
+}
+.apartment__section img {
+  width: 100%;
+}
+
+.apartment__section .living__room {
+  position: absolute;
+  left: 16px;
+  bottom: 10px;
+  background-color: var(--black);
+}
+
+.apartment__section .living__room p {
+  color: var(--white);
+  padding: 0.01em 16px;
+}
+
 /* Gallery Section */
+
+.gallery__section {
+  width: 100%;
+}
+
+.img__column img {
+  width: 100%;
+  filter: blur(2px);
+}
+
+img:hover {
+  filter: blur(0px);
+}
+
+.gallery__section .img__column {
+  width: calc(100% / 4);
+  padding: 0 8px;
+}
 
 /* Info Section */
 
-.info__container {
+.info__container .the__space,
+.amenities,
+.gallery__section {
+  display: flex;
+}
+
+.info__container .columns {
+  width: calc(100% / 2);
+}
+
+.info__container,
+.apartment__section,
+.gallery__section {
   padding: 0.01em 16px;
 }
 
