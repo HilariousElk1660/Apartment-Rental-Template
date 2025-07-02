@@ -41,6 +41,11 @@ hr {
   overflow: visible;
 }
 
+.hover__button:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+
 /* PopUp */
 
 .popup {
